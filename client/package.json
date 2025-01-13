@@ -4,7 +4,7 @@
     "dev": "webpack-dev-server",
     "build": "webpack --config webpack.config.js --mode production",
     "start": "webpack --watch"
-  }
+  },
   "devDependencies": {
     "webpack": "^5.x.x",
     "webpack-cli": "^4.x.x"
