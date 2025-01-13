@@ -4,10 +4,13 @@ services:
     env: node
     buildCommand: |
       npm install
-      cd client && npm install
-      cd ../server && npm install
-      cd .. && npm run build
-    startCommand: npm start
+      cd client
+      npm install webpack-cli --save-dev
+      npm install
+      npm run build
+      cd ../server
+      npm install
+    startCommand: cd server && node server.js
     envVars:
       - key: NODE_ENV
         value: production 
