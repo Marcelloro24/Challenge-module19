@@ -2,7 +2,7 @@
   "name": "JATE",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "NODE_ENV=production node_modules/.bin/webpack --mode production",
+    "build": "webpack --mode production",
     "start": "webpack --watch"
   },
   "author": "Marcello Romero",

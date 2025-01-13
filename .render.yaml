@@ -16,4 +16,4 @@ services:
         value: production
       - key: rnd_3zvesPjSLoreQas42VMLWcfXVw7U
         sync: false # This prevents the token from being exposed
-    autoDeploy: true 
+    autoDeploy: true
