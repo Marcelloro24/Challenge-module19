@@ -5,8 +5,7 @@ services:
     buildCommand: |
       npm install
       cd client
-      npm install webpack-cli --save-dev
-      npm install
+      npm install --force
       npm run build
       cd ../server
       npm install
