@@ -5,11 +5,11 @@ services:
     buildCommand: |
       npm install
       cd client
-      npm install --legacy-peer-deps
-      npm run build
+      npm install --no-optional
+      NODE_ENV=production npm run build
       cd ../server
       npm install
     startCommand: cd server && node server.js
     envVars:
       - key: NODE_ENV
-        value: production 
+        value: production
